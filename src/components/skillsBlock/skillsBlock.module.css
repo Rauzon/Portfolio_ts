@@ -1,0 +1,32 @@
+.skillsBlock{
+    padding: 15px 0px;
+    min-height: 100vh;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container h2{
+    margin: 25px 0px;
+}
+
+.skillsBlock__content{
+    margin: 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,32 @@
+.projects {
+    min-height: 100vh;
+    padding: 15px 0;
+
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.projects__title{
+    margin: 15px 0px 50px;
+}
+
+.projects__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}

@@ -1,14 +1,20 @@
 .header {
     display: flex;
-    height: 100px;
-    background-color: #61dafb;
+    height: 80px;
+    background-color: #fff;
+
 }
 
 .header_wrapper {
     display: flex;
+    font-size: .875rem;
     align-items: center;
     justify-content: flex-end;
     width: 80%;
     margin: 0 auto;
     padding: 0 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
 }

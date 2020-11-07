@@ -12,7 +12,7 @@ export function Contacts() {
                     <textarea id={s.description} placeholder={'Enter description...'}></textarea>
                 </form>
                 <div className={s.contacts__btn}>
-                    <button>Submit</button>
+                    <button type={'submit'}>Submit</button>
                 </div>
             </div>
         </div>

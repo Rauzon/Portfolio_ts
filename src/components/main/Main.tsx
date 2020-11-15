@@ -6,34 +6,6 @@ export function Main() {
     let [positionX, setPositionX] = useState<number | null>(null)
     let [positionY, setPositionY] = useState<number | null>(null)
 
-
-    // this.state = {
-    //     offsetX: '',
-    //     offsetY: '',
-    //     friction: 1 / 32
-
-
-    // _mouseMove(e) {
-    //     let followX = (window.innerWidth / 2 - e.clientX);
-    //     let followY = (window.innerHeight / 2 - e.clientY);
-    //
-    //     let x = 0,
-    //         y = 0;
-    //     x +=( (-followX - x) * this.state.friction);
-    //     y += (followY - y) * this.state.friction;
-    //     this.setState({
-    //         offsetX: x,
-    //         offsetY: y
-    //     });
-    // }
-    // render() {
-    //     let offset = {
-    //         transform: `translate(-50%, -50%) perspective(600px)
-    //               rotateY(${this.state.offsetX}deg)
-    //               rotateX(${this.state.offsetY}deg)`
-    //     }
-
-
     const mouseMove = (e: MouseEvent<HTMLDivElement>) => {
 
         let followX = (window.innerWidth / 2 - e.clientX);
@@ -64,9 +36,12 @@ export function Main() {
         <div className={s.main}>
             <div className={s.container}>
                 <div className={s.main__text}>
-                    <span>Hi people</span>
-                    <h1>My name is Vlad Aharodnikov</h1>
-                    <span>And I'm a Frontend Developer</span>
+                    <h1>
+                        <div><span>I'm</span></div>
+                        <div><span>Aharodnikov</span></div>
+                        <div><span>Vlad</span></div>
+                    </h1>
+                    <div className={s.main__text_prof}><span>Frontend Developer</span></div>
                 </div>
                 <div onMouseMove={mouseMove}
                      onMouseLeave={mouseLeave}

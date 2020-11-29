@@ -1,36 +1,14 @@
-import React, {MouseEvent, CSSProperties, useState, useRef} from 'react';
+import React from 'react';
 import s from './main.module.css';
+import {animated, useSpring} from 'react-spring'
+
+const calc = (x: number, y: number) => [-(y - window.innerHeight / 2) / 25, (x - window.innerWidth / 2) / 25, 1.1]
+const trans = (x: any, y: any, s: any):string => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
 
 export function Main() {
 
-    let [positionX, setPositionX] = useState<number | null>(null)
-    let [positionY, setPositionY] = useState<number | null>(null)
-
-    const mouseMove = (e: MouseEvent<HTMLDivElement>) => {
-
-        let followX = (window.innerWidth / 2 - e.clientX);
-        let followY = (window.innerHeight / 2 - e.clientY);
-
-        let x = 0,
-            y = 0;
-        x += ((-followX - x) * 0.05);
-        y += (followY - y) * 0.05;
-
-        setPositionX(x)
-        setPositionY(y)
-    }
-
-    const mouseLeave = (e: MouseEvent<HTMLDivElement>) => {
-
-        setPositionX(0)
-        setPositionY(0)
-    }
-
-    let offset = {
-        transform: `translate(-2.5%, -2.5%)
-        rotateY(${positionX}deg)
-                  rotateX(${positionY}deg)`
-    }
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
     return (
         <div className={s.main}>
@@ -43,15 +21,23 @@ export function Main() {
                     </h1>
                     <div className={s.main__text_prof}><span>Frontend Developer</span></div>
                 </div>
-                <div onMouseMove={mouseMove}
-                     onMouseLeave={mouseLeave}
-                     className={s.main__photo}>
-                    <div className={s.main__photo_wrapper} style={offset}>
-                        <img src="https://i.ibb.co/2kDwxct/imgonline-com-ua-Black-White-So9-Jywlp-Igk-E3lr.jpg" alt=""/>
-                    </div>
-                </div>
+                <animated.div
+                    className={s.card}
+                    onMouseMove={({clientX: x, clientY: y}) => {
+                        if(window.innerWidth >= 1020){
+                            return set({xys: calc(x-225, y)})
+                        }
+                        return set({xys: calc(x, y)})
+                    }}
+                    onMouseLeave={() => set({xys: [0, 0, 1]})}
+                    style={{
+                        // @ts-ignore
+                        transform: props.xys.interpolate(trans)
+                    }}
+                />
             </div>
         </div>
     );
 }
+
 

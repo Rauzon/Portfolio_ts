@@ -35,6 +35,11 @@
     text-transform: uppercase;
     text-align: left;
 }
+@media (max-width: 380px) {
+    .main__text h1{
+        font-size: 36px;
+    }
+}
 
 .main__text_prof {
     margin-top: 20px;
@@ -54,19 +59,19 @@
     opacity: 1;
     border-color: #fff  transparent transparent transparent;
 }
+.card {
+    width: 45ch;
+    height: 45ch;
+    background: grey;
+    border-radius: 5px;
+    background-image: url("https://i.ibb.co/2kDwxct/imgonline-com-ua-Black-White-So9-Jywlp-Igk-E3lr.jpg");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+}
 
-.main__photo {
-    width: 400px;
-    height: 400px;
-    perspective: 600px;
-    transform-style: preserve-3d;
-}
-.main__photo_wrapper {
-    height: 100%;
-    transition: transform 1s;
-}
-.main__photo_wrapper img{
-    height: 100%;
-    width: 100%;
-    transition: transform 1s;
+.card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }

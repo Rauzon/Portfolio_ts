@@ -11,9 +11,15 @@ type PropsType = {
 export function Skill(props: PropsType) {
     return (
         <div className={s.skill}>
-            <div className={s.skill__icon}>{props.icon}</div>
-            <h2 className={s.skill__title}>{props.title}</h2>
-            <span className={s.skill__content}>{props.description}</span>
+            <div className={s.skill__icon}>
+                <img src={props.icon} alt={props.title}/>
+            </div>
+            <h3 className={s.skill__title}>
+                <a href="#">
+                    {props.title}
+                </a>
+            </h3>
+            <p className={s.skill__content}>{props.description}</p>
 
         </div>
     );

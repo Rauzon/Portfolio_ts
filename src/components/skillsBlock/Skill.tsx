@@ -19,8 +19,9 @@ export function Skill(props: PropsType) {
                     {props.title}
                 </a>
             </h3>
-            <p className={s.skill__content}>{props.description}</p>
-
+            <div className={s.skill__content}>
+                <p>{props.description}</p>
+            </div>
         </div>
     );
 }

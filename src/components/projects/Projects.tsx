@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './projects.module.css';
-import { ProjectsDataType } from './ProjectsContainer';
+import {ProjectsDataType} from './ProjectsContainer';
 import {Project} from "./Project";
 
 type PropsType = {
@@ -11,11 +11,23 @@ export function Projects(props: PropsType) {
     return (
         <div className={s.projects}>
             <div className={s.container}>
-                <h2 className={s.projects__title}>My Project</h2>
+                <div className={s.projects__title}>
+                    <h3>
+                        My Projects
+                    </h3>
+                    <div className={s.container__title_subBlock}>
+                        <div className={s.container__title_subBlock_wraper}>
+                            <div className={s.container__title_subBlock_wraper_divider}>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className={s.projects__content}>
                     {
                         props.projects.map(p => {
-                            return <Project key={p.id}  title={p.projectName} description={p.description}/>
+                            return <Project key={p.id} projectName={p.projectName} projectLink={p.projectLink} />
                         })
                     }
                 </div>

@@ -7,8 +7,19 @@
     justify-content: space-between;
     margin: 15px;
     background-color: #000;
-    height: 250px;
+    height: 300px;
     color: aliceblue;
+}
+
+@media (max-width: 1130px) {
+    .skill {
+        min-height: 300px;
+    }
+}
+@media (max-width: 400px) {
+    .skill {
+        min-height: 400px;
+    }
 }
 
 .skill__icon {
@@ -54,6 +65,6 @@
     color: #dfdfdf;
 }
 
-.skill__content p {
+.skill__content p{
     color: inherit;
 }

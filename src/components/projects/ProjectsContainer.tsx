@@ -5,16 +5,15 @@ export type ProjectsDataType = {
     id: string | number
     icon: string
     projectName: string
-    description: string
+    projectLink: string
 }
 
 export function ProjectsContainer() {
 
 
     const projectsData: ProjectsDataType[] = [
-        {id: 1, icon: '', description: 'sunt in culpa qui officia deserunt mollit anim id est laborum', projectName: "Social Network"},
-        {id: 2, icon: '', description: 'sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum', projectName: "TodoList"},
-        {id: 2, icon: '', description: 'sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum', projectName: "TodoList"},
+        {id: 1, icon: '', projectName: "Social Network", projectLink: "/#"},
+        {id: 2, icon: '',  projectName: "TodoList", projectLink: "/#"},
     ]
 
 

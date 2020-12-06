@@ -19,7 +19,7 @@ export function Footer() {
     ]
 
     return (
-        <footer className={s.footer}>
+        <footer className={s.footer} id={'footer'}>
             <div className={s.container}>
                 <h2>Vlad Aharodnikov</h2>
                 <div className={s.footer__content}>

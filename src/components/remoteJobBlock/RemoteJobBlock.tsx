@@ -8,7 +8,7 @@ export function RemoteJobBlock() {
                 <h2>Interested in remote hiring or other collaborating?</h2>
                 <span>I’m always open to discussing about it</span>
                 <div className={s.remoteJobBlock__btn}>
-                    <button>Start a conversation</button>
+                    <a target={'_blank'} href={'https://www.linkedin.com/in/vlad-aga/'}>Start a conversation</a>
                 </div>
             </div>
         </div>

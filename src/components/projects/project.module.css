@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .project {
     display: flex;
     align-items: center;
@@ -52,6 +56,7 @@
     text-decoration: none;
     transition: all .5s;
 }
+
 .project__icon_link a:hover {
     background-color: #fff;
     color: #000;

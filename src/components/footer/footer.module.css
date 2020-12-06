@@ -1,8 +1,9 @@
 .footer {
     display: flex;
     height: 150px;
-    background-color: aliceblue;
+    background-color: #000000;
     padding: 15px;
+    color: aliceblue;
 }
 
 .container {

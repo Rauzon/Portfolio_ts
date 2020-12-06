@@ -11,7 +11,7 @@ export function Project(props: PropsType) {
         <div className={s.project}>
             <div className={s.project__icon}>
                 <div className={s.project__icon_link}>
-                    <a href={props.projectLink}>{props.projectName}</a>
+                    <a href={props.projectLink} target={'_blank'}>{props.projectName}</a>
                 </div>
             </div>
         </div>

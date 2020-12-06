@@ -9,7 +9,7 @@ type PropsType = {
 
 export function SkillsBlock(props: PropsType) {
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id={'skills'}>
             <div className={s.container}>
                 <h2>My Skills</h2>
                 <div className={s.container__title_subBlock}>

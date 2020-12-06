@@ -3,7 +3,7 @@ import s from './contacts.module.css';
 
 export function Contacts() {
     return (
-        <div className={s.contacts}>
+        <div className={s.contacts} id={'contacts'}>
             <div className={s.container}>
                 <h2>Contacts</h2>
                 <form className={s.contacts__form}>

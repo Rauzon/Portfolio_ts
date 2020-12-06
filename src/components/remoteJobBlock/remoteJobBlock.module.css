@@ -1,7 +1,11 @@
 .remoteJobBlock {
     height: 30vh;
-    background-color: silver;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url("https://i0.wp.com/demo.softhopper.studio/selfer/wp-content/uploads/sites/20/2018/10/bg-keyboard.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 15px 0px;
+    z-index: 0;
 }
 
 .container {
@@ -15,6 +19,34 @@
     justify-content: space-evenly;
 }
 
-.remoteJobBlock__btn button{
-    padding: 10px 20px;
+.container h2{
+    color: #ffffff;
+    font-family: "Rubik", Sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 0.015px;
+}
+.container span{
+    color: #ffffff;
+    font-family: "Rubik", Sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 0.015px;
+}
+.remoteJobBlock__btn a{
+    font-family: "Rubik", Sans-serif;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all .4s;
+}
+.remoteJobBlock__btn a:hover{
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all .4s;
 }

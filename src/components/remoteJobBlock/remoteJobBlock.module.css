@@ -1,5 +1,5 @@
 .remoteJobBlock {
-    height: 30vh;
+    height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url("https://i0.wp.com/demo.softhopper.studio/selfer/wp-content/uploads/sites/20/2018/10/bg-keyboard.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -33,6 +33,12 @@
     line-height: 1.5em;
     letter-spacing: 0.015px;
 }
+@media (max-width: 400px) {
+    .container span{
+        margin-bottom: 5px;
+    }
+}
+
 .remoteJobBlock__btn a{
     font-family: "Rubik", Sans-serif;
     border: 2px solid #fff;

@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -11,7 +11,26 @@ html{
     min-height: 350px;
     background-color: burlywood;
     flex-wrap: wrap;
-    background-image: url('https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    opacity: .5;
+    transition: opacity .4s;
+}
+.project:hover {
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.one {
+    background-image: url("https://i.imgur.com/ntOHDgZ.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.two {
+    background-image: url("https://i.imgur.com/qerbuaH.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (max-width: 600px) {
@@ -32,11 +51,6 @@ html{
     transition: background-color .4s;
 }
 
-.project__icon:hover {
-    background-color: rgba(0, 0, 0, .5);
-    transition: background-color .4s;
-}
-
 .project__icon:hover .project__icon_link {
     display: block;
 }
@@ -52,13 +66,13 @@ html{
     height: 100%;
     color: aliceblue;
     background-color: #000;
-    border: 2px solid #fff;
+    border: 2px solid #f26c4f;
     text-decoration: none;
     transition: all .5s;
 }
 
 .project__icon_link a:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #f26c4f;
+    color: #fff;
     transition: all .5s;
 }

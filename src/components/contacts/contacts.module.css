@@ -18,6 +18,7 @@
 .container h2 {
     margin-top: 15px;
     margin-bottom: -25px;
+    text-transform: uppercase;
 }
 
 .contacts__form {
@@ -29,49 +30,87 @@
     min-height: 300px;
 }
 
-.contacts__form input {
-    width: 350px;
-    height: 25px;
-    padding: 5px;
-    border-radius: 5px;
+.contacts__form input,
+.contacts__form textarea {
+    min-width: 450px;
+    min-height: 50px;
+    margin: 10px 0px;
+    padding: 10px 20px 10px 20px;
     border: none;
-
+    color: #fff;
     outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    box-shadow: none;
+    border-radius: 0;
+    transition: border .3s;
+}
+
+@media (max-width: 500px) {
+    .contacts__form input,
+    .contacts__form textarea {
+        min-width: 300px;
+        min-height: 30px;
+        margin: 10px 0px;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        color: #fff;
+        outline: none;
+        background: rgba(255, 255, 255, 0.1);
+        font-weight: 400;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
+.contacts__form input::placeholder,
+.contacts__form textarea::placeholder{
+    color: aliceblue;
+    opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+    .contacts__form input {
+        max-width: 240px;
+    }
 }
 
 #description {
-    width: 352px;
-    padding: 5px;
-    height: 150px;
-     border-radius: 5px;
+    min-height: 150px;
+    max-height: 350px;
     border: none;
-    resize: none;
-
+    resize: vertical;
     outline: none;
-}
-
-.contacts__btn {
-    width: 250px;
-    margin: -25px auto 0;
-}
-
-.contacts__btn button{
-    padding: 5px 20px;
-    border: none;
-    outline: none;
-    border: none;
 }
 
 @media (max-width: 400px) {
     #description {
         width: 242px;
     }
-    .contacts__form input {
-        max-width: 240px;
-    }
+}
+
+.contacts__btn {
+    width: 250px;
+    margin: 10px auto 0;
+}
+
+@media (max-width: 400px) {
     .contacts__btn {
-        width: 250px;
-        margin: -25px auto 0;
-        transform: translateX(-5%);
+        margin: 10px auto 0;
     }
+}
+
+.contacts__btn button {
+    padding: 20px 45px 20px 45px;
+    color: #ffffff;
+    background: #f26c4f;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    font-family: "Open Sans", Sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.015px;
+    border-radius: 40px 40px 40px 40px;
+    outline: none;
+    border: none;
 }

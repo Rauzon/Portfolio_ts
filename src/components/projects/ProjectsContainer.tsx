@@ -2,7 +2,7 @@ import React from 'react';
 import {Projects} from './Projects';
 
 export type ProjectsDataType = {
-    id: string | number
+    id: string
     icon: string
     projectName: string
     projectLink: string
@@ -12,8 +12,8 @@ export function ProjectsContainer() {
 
 
     const projectsData: ProjectsDataType[] = [
-        {id: 1, icon: '', projectName: "Social Network", projectLink: "https://rauzon.github.io/Social_network_react_typescript"},
-        {id: 2, icon: '',  projectName: "TodoList", projectLink: "/#"},
+        {id: 'one', icon: '', projectName: "Social Network", projectLink: "https://rauzon.github.io/Social_network_react_typescript"},
+        {id: 'two', icon: '',  projectName: "TodoList", projectLink: "/#"},
     ]
 
 

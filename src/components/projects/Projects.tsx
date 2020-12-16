@@ -27,7 +27,7 @@ export function Projects(props: PropsType) {
                 <div className={s.projects__content}>
                     {
                         props.projects.map(p => {
-                            return <Project key={p.id} projectName={p.projectName} projectLink={p.projectLink} />
+                            return <Project key={p.id} projectName={p.projectName} id={p.id} projectLink={p.projectLink} />
                         })
                     }
                 </div>

@@ -2,6 +2,9 @@
     display: flex;
     height: 80px;
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
 
 }
 
@@ -15,6 +18,4 @@
     padding: 0 15px;
     font-weight: 500;
     text-transform: uppercase;
-    padding-top: 0;
-    padding-bottom: 0;
 }

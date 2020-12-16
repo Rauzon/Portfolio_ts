@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    height: 150px;
+    min-height: 150px;
     background-color: #000000;
     padding: 15px;
     color: aliceblue;
@@ -11,15 +11,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 40%;
 }
 
-.footer__content{
+.footer__content {
     display: flex;
     justify-content: center;
+    margin: 10px;
+    width: 100%;
 }
 
-.footer__content_item img{
+.footer__content_link{
     width: 50px;
     height: 50px;
+}
+
+.footer__content_item {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.footer__content_item img {
+    width: 35px;
+    height: 35px;
 }

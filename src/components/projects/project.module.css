@@ -14,10 +14,19 @@ html {
     opacity: .5;
     transition: opacity .4s;
 }
+
 .project:hover {
     opacity: 1;
     transition: opacity .4s;
 }
+
+@media (max-width: 768px) {
+    .project {
+        opacity: 1;
+        transition: opacity .4s;
+    }
+}
+
 
 .one {
     background-image: url("https://i.imgur.com/ntOHDgZ.png");
@@ -58,6 +67,13 @@ html {
 .project__icon_link {
     position: absolute;
     display: none;
+}
+
+@media (max-width: 768px) {
+    .project__icon_link {
+        position: absolute;
+        display: block;
+    }
 }
 
 .project__icon_link a {

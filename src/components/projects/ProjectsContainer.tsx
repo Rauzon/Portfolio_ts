@@ -13,7 +13,7 @@ export function ProjectsContainer() {
 
     const projectsData: ProjectsDataType[] = [
         {id: 'one', icon: '', projectName: "Social Network", projectLink: "https://rauzon.github.io/Social_network_react_typescript"},
-        {id: 'two', icon: '',  projectName: "TodoList", projectLink: "/#"},
+        {id: 'two', icon: '',  projectName: "TodoList", projectLink: "http://rauzon.github.io/todolist_TS"},
     ]
 
 
